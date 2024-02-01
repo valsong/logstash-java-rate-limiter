@@ -39,13 +39,13 @@ cd bin
 sh ./install-logstash-core.sh
 ```
 
-- 使用JDK8来编译logstash-java-rate-limiter
+- 使用JDK11来编译logstash-java-rate-limiter
 
 ```
 mvn clean install -DskipTests
 ```
 
-- 将target文件夹中的`logstash-java-rate-limiter-7.17.17.jar`复制到logstash的`/logstash-core/lib/jars/`文件夹中.
+- 将target文件夹中的`logstash-java-rate-limiter-8.12.0.jar`复制到logstash的`/logstash-core/lib/jars/`文件夹中.
 
 # 如何使用
 
