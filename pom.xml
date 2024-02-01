@@ -16,9 +16,9 @@
         <maven-compiler-plugin.encoding>UTF-8</maven-compiler-plugin.encoding>
         <maven-dependency-plugin.version>3.6.0</maven-dependency-plugin.version>
         <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
-        <logstash.version>7.10.0</logstash.version>
-        <guava.version>24.1.1-jre</guava.version>
-        <log4j-core.version>2.13.3</log4j-core.version>
+        <logstash.version>6.8.13</logstash.version>
+        <guava.version>20.0</guava.version>
+        <log4j-core.version>2.9.1</log4j-core.version>
     </properties>
 
     <dependencies>

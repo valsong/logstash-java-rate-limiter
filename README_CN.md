@@ -45,7 +45,7 @@ sh ./install-logstash-core.sh
 mvn clean install -DskipTests
 ```
 
-- 将target文件夹中的`logstash-java-rate-limiter-7.10.0.jar`复制到logstash的`/logstash-core/lib/jars/`文件夹中.
+- 将target文件夹中的`logstash-java-rate-limiter-6.8.13.jar`复制到logstash的`/logstash-core/lib/jars/`文件夹中.
 
 # 如何使用
 

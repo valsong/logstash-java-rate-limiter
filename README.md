@@ -45,7 +45,7 @@ sh ./install-logstash-core.sh
 mvn clean install -DskipTests
 ```
 
-- Copy `logstash-java-rate-limiter-7.10.0.jar` to logstash's `/logstash-core/lib/jars/` directory.
+- Copy `logstash-java-rate-limiter-6.8.13.jar` to logstash's `/logstash-core/lib/jars/` directory.
 
 # How to use
 
