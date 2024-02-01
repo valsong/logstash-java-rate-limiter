@@ -51,13 +51,25 @@ mvn clean install -DskipTests
 
 plugin `org.logstash.plugins.filters.RateLimitFilter`
 
+## 插件名称
+`java_rate_limit`
+
+## 参数
 |        param        |  type  | required | 默认值 |              样例               |               desc               |
 |:-------------------:|:------:|:--------:|:---:|:-----------------------------:|:--------------------------------:|
 |      rate_path      | string |    no    |  无  | /usr/share/logstash/rate.txt  | 从该文件中读取第一行作为限流值，你可以随时修改这个文件中的限流值 |
 |     count_path      | string |    no    |  无  | /usr/share/logstash/count.txt |        记录已经同步的事件的数量到该文件中         |
 | count_log_delay_sec |  long  |    no    | 30  |              30               | 根据设置的秒数以固定间隔在logstash的日志中打印事件数量  |
 
-样例
+## 样例
+
+- 在文件中设置限流值
+```shell
+echo 5000 > /usr/share/logstash/rate.txt
+```
+
+
+- 添加一个filter叫`java_rate_limit`到任务的配置文件中
 
 ```shell
 input {

@@ -51,14 +51,25 @@ mvn clean install -DskipTests
 
 plugin `org.logstash.plugins.filters.RateLimitFilter`
 
+## plugin Name
+`java_rate_limit`
+
+## params
 |        param        |  type  | required | default value |              eg               |                                                    desc                                                     |
 |:-------------------:|:------:|:--------:|:-------------:|:-----------------------------:|:-----------------------------------------------------------------------------------------------------------:|
 |      rate_path      | string |    no    |     none      | /usr/share/logstash/rate.txt  | Get the rate from this text file path, using only the first line. You can change the value in it if needed. |
 |     count_path      | string |    no    |     none      | /usr/share/logstash/count.txt |                                  Record the count of events in this path.                                   |
 | count_log_delay_sec |  long  |    no    |      30       |              30               |                Record the count of events in the Logstash log with a fixed delay in seconds.                |
 
-eg.
+## eg
 
+- Set the rate into a text file.
+```shell
+echo 5000 > /usr/share/logstash/rate.txt
+```
+
+
+- Add a filter named `java_rate_limit` in task conf.
 ```shell
 input {
   elasticsearch {
