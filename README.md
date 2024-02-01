@@ -39,13 +39,13 @@ cd bin
 sh ./install-logstash-core.sh
 ```
 
-- Use JDK 8 to compile logstash-java-rate-limiter
+- Use JDK 11 to compile logstash-java-rate-limiter
 
 ```
 mvn clean install -DskipTests
 ```
 
-- Copy `logstash-java-rate-limiter-7.17.17.jar` to logstash's `/logstash-core/lib/jars/` directory.
+- Copy `logstash-java-rate-limiter-8.12.0.jar` to logstash's `/logstash-core/lib/jars/` directory.
 
 # How to use
 
